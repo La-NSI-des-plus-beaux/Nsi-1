@@ -70,15 +70,7 @@ const nav = document.querySelector(".nav")
               }
           }
       }
-      document.querySelector(".hire-me").addEventListener("click", function () 
-      {
-          const SectionIndex = this.getAttribute("data-section-index");
-          // console.log(SectionIndex);
-          showSection(this);
-          upddateNav(this);
-          removeBackSection();
-          addBackSection(SectionIndex);
-      })
+      
       
       const navTogglerBtn = document.querySelector(".nav-toggler"),
         aside = document.querySelector(".aside");
@@ -99,4 +91,29 @@ const nav = document.querySelector(".nav")
             alert("Je n'ai pas de CV actuellement.");
           }
 
-          
+// TEST WEBHOOK
+
+function sendMessage() {
+    var nom = document.getElementById('nom-id').value
+    var email = document.getElementById('email-id').value
+    var objet = document.getElementById('objet-id').value
+    var message = document.getElementById('message-id').value
+
+    var myEmbed = {
+        author: {
+            name: nom + " (" + email + ")",
+          },
+        title: objet,
+        description: message
+      }
+
+    const request = new XMLHttpRequest();
+    request.open("POST", "https://discord.com/api/webhooks/1042499996567736440/YQmyUiTaANn8T_LqAO2DaC3mcd0zfks18xDjgWTIkuBqdcBTqSF4wnf87xHz0MVkgPwa");
+    request.setRequestHeader('Content-type', 'application/json');
+    const params = {
+        embeds: [ myEmbed ]
+    }
+    request.send(JSON.stringify(params));
+    alert("Message envoyé !")
+
+}
