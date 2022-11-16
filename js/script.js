@@ -1,7 +1,7 @@
 /* ========================= Typing animation ===============================*/
 
 var typed = new Typed(".typing", {
-    strings:["", "Son Histoire", "Le Web", "Les Languages", "Les métiers"],
+    strings:["", "Son Histoire", "Le Web", "Les Langages", "Les métiers"],
     typeSpeed:100, 
     BackSpeed:60, 
     loop:true
@@ -87,11 +87,9 @@ const nav = document.querySelector(".nav")
               }
           }
 
-          function CV() {
-            alert("Je n'ai pas de CV actuellement.");
-          }
+          
 
-// TEST WEBHOOK
+// Webhook Discord
 
 function sendMessage() {
     var nom = document.getElementById('nom-id').value
@@ -114,6 +112,10 @@ function sendMessage() {
         embeds: [ myEmbed ]
     }
     request.send(JSON.stringify(params));
+    document.getElementById('nom-id').value = ""
+    document.getElementById('email-id').value = ""
+    document.getElementById('objet-id').value = ""
+    document.getElementById('message-id').value = ""
     alert("Message envoyé !")
 
 }
