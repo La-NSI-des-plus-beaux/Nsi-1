@@ -652,7 +652,6 @@ h3.my-profession {
     margin-bottom: 15px;
     color: var(--text-black-900);
     font-weight: 700;
-    text-transform: capitalize;
 }
 
 .langages .langages-item .langages-item-inner p {
