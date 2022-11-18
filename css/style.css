@@ -662,34 +662,34 @@ h3.my-profession {
 
 /* Portfolio */
 
-.web .container {
+.actus .container {
     padding-bottom: 40px;
 }
 
-.web .web-heading {
+.actus .actus-heading {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
 
-.web .web-heading h2 {
+.actus .actus-heading h2 {
     color: var(--text-black-900);
     font-weight: 500;
 }
 
-.web .web-item {
+.actus .actus-item {
     flex: 0 0 33.33%;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
 
-.web .web-item-inner {
+.actus .actus-item-inner {
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
-.web .web-item-inner .web-img img {
+.actus .actus-item-inner .actus-img img {
     width: 100%;
     display: block;
 }
@@ -825,7 +825,7 @@ h3.my-profession {
 
 @media (max-width: 991px){
     .metier .metier-info-item,
-    .web .web-item,
+    .actus .actus-item,
     .langages .langages-item {
         flex: 0 0 50%;
         max-width: 50%;
@@ -842,7 +842,7 @@ h3.my-profession {
 @media (max-width: 767px){
     .metier .metier-form .col-6,
     .metier .metier-info-item,
-    .web .web-item,
+    .actus .actus-item,
     .langages .langages-item,
     .histoire .histoire-content .experience,
     .histoire .histoire-content .education,
