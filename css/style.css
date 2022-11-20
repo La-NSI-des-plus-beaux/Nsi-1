@@ -596,7 +596,7 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
-/* Service Section */
+/* Langages */
 
 .langages .container {
     padding-bottom: 40px;
@@ -660,41 +660,81 @@ h3.my-profession {
     line-height: 25px;
 }
 
-/* Portfolio */
+/* Actus */
 
 .actus .container {
     padding-bottom: 40px;
 }
 
-.actus .actus-heading {
-    flex: 0 0 100%;
-    max-width: 100%;
-    margin-bottom: 40px;
-}
-
-.actus .actus-heading h2 {
-    color: var(--text-black-900);
-    font-weight: 500;
+.actus-heading {
+    padding-bottom: 70px;
 }
 
 .actus .actus-item {
-    flex: 0 0 33.33%;
-    max-width: 33.33%;
     margin-bottom: 30px;
+    flex: 0 0 90%;
+    flex-direction: column;
+    max-width: 90%;
 }
 
-.actus .actus-item-inner {
-    border: 6px solid var(--bg-black-100);
-    border-radius: 10px;
-    overflow: hidden;
-    cursor: pointer;
+.actus .actus-item .actus-item-inner {
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 20px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3s ease;
 }
-.actus .actus-item-inner .actus-img img {
+
+.actus .actus-item .actus-item-inner:hover {
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+}
+
+.actus .actus-item .actus-item-inner h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--skin-color);
+    font-weight: 700;
+}
+
+.actus .actus-item .actus-item-inner p {
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+
+.actus .actus-item .actus-item-inner p a{
+    font-size: 16px;
+    color: var(--skin-color);
+    line-height: 25px;
+}
+
+.underline {
+    display: inline-block;
+    position: relative;
+    color: var(--skin-color);
+  }
+
+.underline:after{
+    content: '';
+    position: absolute;
     width: 100%;
-    display: block;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--skin-color);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.underline:hover::after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
 
 /* Contact */
+
 .metier-title {
     color: var(--skin-color);
     text-align: center;
