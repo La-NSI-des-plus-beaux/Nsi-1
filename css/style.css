@@ -668,6 +668,7 @@ h3.my-profession {
 
 .actus-heading {
     padding-bottom: 70px;
+    color: var(--text-black-900);
 }
 
 .actus .actus-item {
@@ -705,8 +706,19 @@ h3.my-profession {
 
 .actus .actus-item .actus-item-inner p a{
     font-size: 16px;
-    color: var(--skin-color);
+    color: var(--text-black-700);
     line-height: 25px;
+}
+
+.actus .actus-item .actus-item-inner p a:hover{
+    color: var(--skin-color);
+}
+
+.actus img {
+    width: 50% ;
+    margin: 15px;
+    border-radius: 9px; 
+
 }
 
 .underline {
