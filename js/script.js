@@ -105,6 +105,11 @@ function sendMessage() {
     var objet = document.getElementById('objet-id').value
     var message = document.getElementById('message-id').value
 
+    if(message.startsWith("<")){
+        alert("Bien essayé, mais içi c'est sécurisé ;)")
+    }
+    else{   
+    
     var myEmbed = {
         author: {
             name: nom + " (" + email + ")",
@@ -126,4 +131,4 @@ function sendMessage() {
     document.getElementById('message-id').value = ""
     alert("Message envoyé !")
 
-}
+}}
