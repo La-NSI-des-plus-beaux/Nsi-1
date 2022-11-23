@@ -50,9 +50,6 @@ start_button.addEventListener("click", function () {
     element.classList.add("active");
     showSection(this);
     logo.innerHTML = logo_name
-    if (window.innerWidth < 1200) {
-        asideSectionTogglerBtn();
-    }
 
 
 })
