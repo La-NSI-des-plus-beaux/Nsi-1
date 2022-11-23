@@ -106,7 +106,7 @@ function sendMessage() {
     var message = document.getElementById('message-id').value
 
     if(message.startsWith("<")){
-        alert("Bien essayé, mais içi c'est sécurisé ;)")
+        alert("Bien essayé, mais ici c'est sécurisé ;)")
     }
     else{   
     
