@@ -31,8 +31,8 @@
             </div>
             <ul class="nav">
                 <li><a href="#accueil" class="active"><i class="fa fa-home"></i> Accueil</a></li>
-                <li><a href="#histoire"><i class="fa fa-user"></i> Son histoire</a></li>
-                <li><a href="#langages"><i class="fa fa-language"></i> Les langages</a></li>
+                <li><a id="histoire_link" href="#histoire"><i class="fa fa-user"></i> Son histoire</a></li>
+                <li><a href="#domaines"><i class="fa fa-language"></i> Les domaines</a></li>
                 <li><a href="#actus"><i class="fa fa-newspaper"></i> Actus</a></li>
                 <li><a href="#métiers"><i class="fa fa-briefcase"></i> Les métiers</a></li>
             </ul>
@@ -46,12 +46,12 @@
                         <div class="accueil-info padd-15">
                             <h3 class="hello">La <span class="name">Programmation</span></h3>
                             <h3 class="my-profession"><span class="typing">ㅤ</span></h3>
-                            <p>La programmation informatique appelé aussi codage représente l'ensemble d'opérations
+                            <p>La programmation informatique appelée aussi codage représente l'ensemble d'opérations
                                 écrites qui seront ensuite exécutées par un ordinateur. Programmer consiste donc à
                                 écrire des algorithmes informatiques. Apprendre le langage informatique est à la portée
                                 de tous, le maîtriser est une toute autre histoire :)</p>
-                            <!-- <a href="#histoire"
-                                class="btn CV">Commencer</a> -->
+                            <a href="#histoire"
+                                class="btn CV start_button">Commencer</a>
                         </div>
 
                     </div>
@@ -155,7 +155,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 1991
                                                     </h3>
-                                                    <h4 class="timeline-title"> Première version de Python
+                                                    <h4 class="timeline-title"> Première version de Python publiée
                                                     </h4>
                                                     <p class="timeline-text"></p>
                                                 </div>
@@ -164,7 +164,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 1995
                                                     </h3>
-                                                    <h4 class="timeline-title">Création de Java
+                                                    <h4 class="timeline-title">Première version de Java présentée
                                                     </h4>
                                                     <p class="timeline-text"></p>
                                                 </div>
@@ -193,17 +193,17 @@
 
 
 
-        <section class="langages section" id="langages">
+        <section class="domaines section" id="domaines">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
-                        <h2>Les langages</h2>
+                        <h2>Les domaines et leurs langages</h2>
                     </div>
                 </div>
             </div>
             <div class="row">
-                <div class="langages-item padd-15">
-                    <div class="langages-item-inner">
+                <div class="domaines-item padd-15">
+                    <div class="domaines-item-inner">
                         <div class="icon">
                             <i class="fa fa-mobile-alt"></i>
                         </div>
@@ -212,7 +212,7 @@
                             ayant
                             des utilités différentes. Par exemple pour le développement d'applications android on
                             préfèrera
-                            Kotlin ou Java alors que l'on utiliserait Swift sur IOS. Tous sont équivalent mais
+                            Kotlin ou Java alors que l'on utiliserait Swift sur IOS. Tous sont équivalents mais
                             différents, c'est pourquoi il est important de choisir un langage adapté à ce que l'on veut
                             faire et à l'utilisation qu'en auraient les utilisateurs (jeux, réseaux sociaux, etc...).
                         </p>
@@ -220,8 +220,8 @@
                 </div>
 
 
-                <div class="langages-item padd-15">
-                    <div class="langages-item-inner">
+                <div class="domaines-item padd-15">
+                    <div class="domaines-item-inner">
                         <div class="icon">
                             <i class="fa fa-palette"></i>
                         </div>
@@ -237,8 +237,8 @@
                 </div>
 
 
-                <div class="langages-item padd-15">
-                    <div class="langages-item-inner">
+                <div class="domaines-item padd-15">
+                    <div class="domaines-item-inner">
                         <div class="icon">
                             <i class="fa fa-laptop-code"></i>
                         </div>
@@ -256,8 +256,8 @@
                 </div>
 
 
-                <div class="langages-item padd-15">
-                    <div class="langages-item-inner">
+                <div class="domaines-item padd-15">
+                    <div class="domaines-item-inner">
                         <div class="icon">
                             <i class="fa fa-robot"></i>
                         </div>
@@ -274,8 +274,8 @@
                 </div>
 
 
-                <div class="langages-item padd-15">
-                    <div class="langages-item-inner">
+                <div class="domaines-item padd-15">
+                    <div class="domaines-item-inner">
                         <div class="icon">
                             <i class="fa fa-brain"></i>
                         </div>
@@ -292,8 +292,8 @@
                 </div>
 
 
-                <div class="langages-item padd-15">
-                    <div class="langages-item-inner">
+                <div class="domaines-item padd-15">
+                    <div class="domaines-item-inner">
                         <div class="icon">
                             <i class="fa fa-gamepad"></i>
                         </div>
@@ -446,7 +446,7 @@
                     <h4>Expert Cybersécurité (Hacker Ethique)</h4>
                     <p>Dans le monde de la programmation comme partout, il y a des failles, c'est le
                         rôle du hacker éthique de chercher ces failles dans les systèmes de ses clients ou de son
-                        entreprise afin de les corriger pour éviter toute future action malveillantes.</p>
+                        entreprise afin de les corriger pour éviter toute future action malveillante.</p>
                 </div>
 
                 <div class="metier-info-item padd-15">
@@ -454,7 +454,7 @@
                     <h4>Data Scientist</h4>
                     <p>Le but d'un data scientist est de collecter des données, de les analyser et de les traiter afin
                         de
-                        fournir des rapports aidant au marketing et à la performance de l'entreprise. Pour se faire, il
+                        fournir des rapports aidant au marketing et à la performance de l'entreprise. Pour ce faire, il
                         crée des
                         algorithmes et traduit leurs résultats, par exemple avec des graphiques.</p>
                 </div>

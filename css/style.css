@@ -596,19 +596,19 @@ h3.my-profession {
     color: var(--text-black-700);
 }
 
-/* Langages */
+/* domaines */
 
-.langages .container {
+.domaines .container {
     padding-bottom: 40px;
 }
 
-.langages .langages-item {
+.domaines .domaines-item {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
 
-.langages .langages-item .langages-item-inner {
+.domaines .domaines-item .domaines-item-inner {
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
     border-radius: 10px;
@@ -617,11 +617,11 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.langages .langages-item .langages-item-inner:hover {
+.domaines .domaines-item .domaines-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
-.langages .langages-item .langages-item-inner .icon {
+.domaines .domaines-item .domaines-item-inner .icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -631,30 +631,30 @@ h3.my-profession {
     transition: all 0.3s ease;
 }
 
-.langages .langages-item .langages-item-inner .icon .fa {
+.domaines .domaines-item .domaines-item-inner .icon .fa {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
     transition: all 0.3s ease;
 }
 
-.langages .langages-item .langages-item-inner:hover .icon {
+.domaines .domaines-item .domaines-item-inner:hover .icon {
     background: var(--skin-color);
 }
 
-.langages .langages-item .langages-item-inner:hover .icon .fa {
+.domaines .domaines-item .domaines-item-inner:hover .icon .fa {
     font-size: 25px;
     color: #ffffff;
 }
 
-.langages .langages-item .langages-item-inner h4 {
+.domaines .domaines-item .domaines-item-inner h4 {
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-black-900);
     font-weight: 700;
 }
 
-.langages .langages-item .langages-item-inner p {
+.domaines .domaines-item .domaines-item-inner p {
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
@@ -878,7 +878,7 @@ h3.my-profession {
 @media (max-width: 991px){
     .metier .metier-info-item,
     .actus .actus-item,
-    .langages .langages-item {
+    .domaines .domaines-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
@@ -895,7 +895,7 @@ h3.my-profession {
     .metier .metier-form .col-6,
     .metier .metier-info-item,
     .actus .actus-item,
-    .langages .langages-item,
+    .domaines .domaines-item,
     .histoire .histoire-content .experience,
     .histoire .histoire-content .education,
     .histoire .histoire-content .skills,
